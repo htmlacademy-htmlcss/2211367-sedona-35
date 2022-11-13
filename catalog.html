@@ -73,19 +73,27 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="bed-head-for-men" checked>Бассейн
+                      <input class="control-input" type="checkbox" name="" checked>
+                      <span class="fake"></span>
+
+                      <span class="text">Бассейн</span>
                     </label>
                   </li>
 
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>Парковка
+                      <input class="control-input" type="checkbox" name="" checked>
+                      <span class="fake"></span>
+                      <span class="text">Парковка</span>
+
                     </label>
                   </li>
 
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool">Wi-fi
+                      <input class="control-input" type="checkbox" name="">
+                      <span class="fake"></span>
+                      <span class="text">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -98,17 +106,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" checked name="homme-deep-cleansing-cool">Гостиница
+                      <input class="control-input-radio" type="radio" checked name="nameradio">
+                      <span class="fake-radio"></span>
+                      <span class="text-radio">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="homme-deep-cleansing-cool">Мотель
+                      <input class="control-input-radio" type="radio" name="nameradio">
+                      <span class="fake-radio"></span>
+                      <span class="text-radio">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="homme-deep-cleansing-cool">Аппартаменты
+                      <input class="control-input-radio" type="radio" name="nameradio">
+                      <span class="fake-radio"></span>
+                      <span class="text-radio">Аппартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -120,10 +134,10 @@
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
                 <form class="price-category" action="" method="post">
-                  <input class="input-class-start" type="" placeholder="0" id="start" name="" />
+                  <input class="input-class-start" type="text-0" placeholder="0" id="start" name="name2" />
                   <label for="start"></label>
 
-                  <input class="input-class-end" type="" id="end" placeholder="9000" />
+                  <input class="input-class-end" type="text-9000" id="end" placeholder="9000" />
                   <label for="end"></label>
 
                 </form>
@@ -154,79 +168,73 @@
 
       <section class="search-wrapper">
 
-        <div class="search-results">
+
+        <div class="option-wrapper">
           <h2 class="Pages-found">Найдено Гостиниц: 38</h2>
-          <div class="option-wrapper">
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогое</option>
-              <option value="popular">Сначала популярное</option>
-            </select>
-          </div>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогое</option>
+            <option value="popular">Сначала популярное</option>
+          </select>
 
-          <div class="option-button-wrapper">
 
-            <button class="overview-icons" type="">
-              <svg area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                fill="none" viewBox="0 0 16 14">
-                <path fill="#000"
-                  d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-              </svg>
-            </button>
-
-            <button class="overview-icons" type="">
-              <svg area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                fill="none" viewBox="0 0 16 14">
-                <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-              </svg>
-            </button>
-
-            <button class="overview-icons" type="">
-              <svg area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                fill="none" viewBox="0 0 16 14">
-                <path fill="#000"
-                  d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-              </svg>
-            </button>
-
-          </div>
+          <input class="control-input card-control" id="radio-1" type="radio" checked name="card-control">
+          <label for="radio-1">
+            <svg area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+              fill="none" viewBox="0 0 16 14">
+              <path fill="#000"
+                d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+            </svg>
+          </label>
+          <input class="control-input card-control" id="radio-2" type="radio" name="card-control">
+          <label for="radio-2">
+            <svg area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+              fill="none" viewBox="0 0 16 14">
+              <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+            </svg>
+          </label>
+          <input class="control-input card-control control-input-visual" id="radio-3" type="radio" name="card-control">
+          <label for="radio-3">
+            <svg area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+              fill="none" viewBox="0 0 16 14">
+              <path fill="#000"
+                d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+            </svg>
+          </label>
         </div>
-        <button class="overview-icons" type="">
-          <svg area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-            fill="none" viewBox="0 0 16 14">
-            <path fill="#000"
-              d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-          </svg>
-        </button>
+
+
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Amara Resort &Spa">
             </a>
-            <div class="product-name">
-              <h3 class="product-card-title">Amara Resort & Spa</h3>
-            </div>
-
-            <div class="product-card-wrapper">
-              <span class="product-card-type">Гостиница</span>
-              <span class="product-card-price">От 4000 ₽</span>
-            </div>
-
-            <div class="product-button">
-              <a class="product-card-button button">Подробнее</a>
-              <button class="button-more" type="submit">В избранное</button>
-            </div>
-
-            <div class="rating">
-              <div class="product-stars-rating">
-                <img src="images/VectorStar.svg" width="18" height="17">
-                <img src="images/VectorStar.svg" width="18" height="17">
-                <img src="images/VectorStar.svg" width="18" height="17">
-                <img src="images/VectorStar.svg" width="18" height="17">
+            <div class="product-card-info">
+              <div class="product-name">
+                <h3 class="product-card-title">Amara Resort & Spa</h3>
               </div>
 
-              <div class="button-card-rating">
-                <button class="button-more-1" type="submit">Рейтинг 8,5</button>
+              <div class="product-card-wrapper">
+                <span class="product-card-type">Гостиница</span>
+                <span class="product-card-price">От 4000 ₽</span>
+              </div>
+
+              <div class="product-button">
+                <a class="product-card-button button hover-visual">Подробнее</a>
+                <button class="button-more hover-visual" type="submit">В избранное</button>
+              </div>
+
+              <div class="rating">
+                <div class="product-stars-rating">
+                  <img src="images/VectorStar.svg" width="18" height="17">
+                  <img src="images/VectorStar.svg" width="18" height="17">
+                  <img src="images/VectorStar.svg" width="18" height="17">
+                  <img src="images/VectorStar.svg" width="18" height="17">
+                </div>
+
+                <div class="button-card-rating">
+                  <button class="button-more-1" type="submit">Рейтинг 8,5</button>
+                </div>
               </div>
             </div>
           </li>
@@ -235,63 +243,32 @@
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Amara Resort &Spa">
             </a>
-            <div class="product-name">
-              <h3 class="product-card-title">Villas at Poco Diablo</h3>
-            </div>
-
-            <div class="product-card-wrapper">
-              <span class="product-card-type">Гостиница</span>
-              <span class="product-card-price">От 5000 ₽</span>
-            </div>
-
-            <div class="product-button">
-              <a class="product-card-button button">Подробнее</a>
-              <button class="button-more-green" type="submit">В избранное</button>
-            </div>
-
-            <div class="rating">
-              <div class="product-stars-rating">
-                <img src="images/VectorStar.svg" width="18" height="17px">
-                <img src="images/VectorStar.svg" width="18" height="17px">
-                <img src="images/VectorStar.svg" width="18px" height="17px">
-                <img src="images/VectorStar.svg" width="18px" height="17px">
+            <div class="product-card-info">
+              <div class="product-name">
+                <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </div>
 
-              <div class="button-card-rating">
-                <button class="button-more-1" type="submit">Рейтинг 9,2</button>
-              </div>
-            </div>
-
-          </li>
-
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/hotel-3.jpg" width="300px" height="212px"
-                alt="Amara Resort &Spa">
-            </a>
-            <div class="product-name">
-              <h3 class="product-card-title">Desert Quail Inn</h3>
-            </div>
-
-            <div class="product-card-wrapper">
-              <span class="product-card-type">Гостиница</span>
-              <span class="product-card-price">От 2500 ₽</span>
-            </div>
-
-            <div class="product-button">
-              <a class="product-card-button button">Подробнее</a>
-              <button class="button-more" type="submit">В избранное</button>
-            </div>
-
-            <div class="rating">
-              <div class="product-stars-rating">
-                <img src="images/VectorStar.svg" width="18px" height="17px">
-                <img src="images/VectorStar.svg" width="18px" height="17px">
-                <img src="images/VectorStar.svg" width="18px" height="17px">
+              <div class="product-card-wrapper">
+                <span class="product-card-type">Гостиница</span>
+                <span class="product-card-price">От 5000 ₽</span>
               </div>
 
-              <div class="button-card-rating">
-                <button class="button-more-1" type="submit">Рейтинг 6,9</button>
+              <div class="product-button">
+                <a class="product-card-button button hover-visual">Подробнее</a>
+                <button class="button-more-green hover-visual" type="submit">В избранное</button>
+              </div>
+
+              <div class="rating">
+                <div class="product-stars-rating">
+                  <img src="images/VectorStar.svg" width="18" height="17">
+                  <img src="images/VectorStar.svg" width="18" height="17">
+                  <img src="images/VectorStar.svg" width="18px" height="17">
+                  <img src="images/VectorStar.svg" width="18px" height="17">
+                </div>
+
+                <div class="button-card-rating">
+                  <button class="button-more-1" type="submit">Рейтинг 9,2</button>
+                </div>
               </div>
             </div>
 
@@ -299,31 +276,66 @@
 
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/hotel-4.jpg" width="300px" height="212px"
-                alt="Amara Resort &Spa">
+              <img class="product-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Amara Resort &Spa">
             </a>
-            <div class="product-name">
-              <h3 class="product-card-title">GreenTree Inn</h3>
-            </div>
-
-            <div class="product-card-wrapper">
-              <span class="product-card-type">Гостиница</span>
-              <span class="product-card-price">От 1500 ₽</span>
-            </div>
-
-            <div class="product-button">
-              <a class="product-card-button button">Подробнее</a>
-              <button class="button-more" type="submit">В избранное</button>
-            </div>
-
-            <div class="rating">
-              <div class="product-stars-rating">
-                <img src="images/VectorStar.svg" width="18px" height="17px">
-                <img src="images/VectorStar.svg" width="18px" height="17px">
+            <div class="product-card-info">
+              <div class="product-name">
+                <h3 class="product-card-title">Desert Quail Inn</h3>
               </div>
 
-              <div class="button-card-rating">
-                <button class="button-more-1" type="submit">Рейтинг 8,5</button>
+              <div class="product-card-wrapper">
+                <span class="product-card-type">Гостиница</span>
+                <span class="product-card-price">От 2500 ₽</span>
+              </div>
+
+              <div class="product-button">
+                <a class="product-card-button button hover-visual">Подробнее</a>
+                <button class="button-more hover-visual" type="submit">В избранное</button>
+              </div>
+
+              <div class="rating">
+                <div class="product-stars-rating">
+                  <img src="images/VectorStar.svg" width="18px" height="17">
+                  <img src="images/VectorStar.svg" width="18px" height="17">
+                  <img src="images/VectorStar.svg" width="18px" height="17">
+                </div>
+
+                <div class="button-card-rating">
+                  <button class="button-more-1" type="submit">Рейтинг 6,9</button>
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Amara Resort &Spa">
+            </a>
+            <div class="product-card-info">
+              <div class="product-name">
+                <h3 class="product-card-title">GreenTree Inn</h3>
+              </div>
+
+              <div class="product-card-wrapper">
+                <span class="product-card-type">Гостиница</span>
+                <span class="product-card-price">От 1500 ₽</span>
+              </div>
+
+              <div class="product-button">
+                <a class="product-card-button button hover-visual">Подробнее</a>
+                <button class="button-more hover-visual" type="submit">В избранное</button>
+              </div>
+
+              <div class="rating">
+                <div class="product-stars-rating">
+                  <img src="images/VectorStar.svg" width="18px" height="17p">
+                  <img src="images/VectorStar.svg" width="18px" height="17p">
+                </div>
+
+                <div class="button-card-rating">
+                  <button class="button-more-1" type="submit">Рейтинг 8,5</button>
+                </div>
               </div>
             </div>
           </li>

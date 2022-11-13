@@ -50,8 +50,8 @@
 
       <main class="main-block">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="logo-sedona" src="images/welcome.svg" width="458px" height="352px" alt="Главный логотип Седона">
-        <img class="Vectorwhite" src="images/Vectorwhite.svg" width="1200px" height="57px">
+        <img class="logo-sedona" src="images/welcome.svg" width="458" height="352" alt="Главный логотип Седона">
+        <img class="Vectorwhite" src="images/Vectorwhite.svg" width="1200" height="57">
       </main>
 
       <section class="block-info">
@@ -218,6 +218,96 @@
         </section>
       </footer>
     </div>
+
+    <div class="modal-container modal-container-close"> -->
+      <div class="modal modal-auth">
+        <button class="model-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <span class="modal-item-header">Дата Заезда:</span>
+              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group">
+                  <label class="visually-hidden" for="auth-date"></label>
+                  <input class="auth-form-field field" type="text" id="auth-date" name="auth-date"
+                    placeholder="27 апреля 2020">
+                </p>
+                <button class="foto-date">
+                </button>
+              </form>
+              <div class="error-wrapper">
+                <p class="error">Мы не можем отправить вас в прошлое.</p>
+                <div>
+            </li>
+            <li class="modal-item">
+              <span class="modal-item-header">Дата Выезда:</span>
+              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+
+                <p class="field-group">
+                  <label class="visually-hidden" for="auth-date">Дата</label>
+                  <input class="auth-form-field field" type="text" id="auth-date" name="auth-date"
+                    placeholder="1 сентября 2023">
+                </p>
+                <button class="foto-date-too">
+                </button>
+              </form>
+              <div class="date-actual-wrapper">
+                <p class="date-actual">На эти даты есть свободные номера. Пока есть.</p>
+                <div>
+            </li>
+          </ul>
+          <ul class="modal-list-people">
+
+            <li class="modal-item-people">
+              <span class="modal-item-header">Взрослые:</span>
+              <form class="auth-form-people" action="https://echo.htmlacademy.ru/" method="post">
+
+                <p class="field-group">
+                  <label class="visually-hidden" for="auth-people">Взрослые:</label>
+                  <input class="auth-form-field-people field-people" type="text" id="auth-people" name="auth-people"
+                    placeholder="2">
+                </p>
+              </form>
+            </li>
+
+            <li class="modal-item-people">
+              <span class="modal-item-header">Дети:</span>
+              <div class="icon-i">
+
+              </div>
+              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+
+                <p class="field-group">
+                  <label class="visually-hidden" for="auth-people">Дети:</label>
+                  <input class="auth-form-field-people field-people-2" type="text" id="auth-people" name="auth-people"
+                    placeholder="2">
+
+                </p>
+              </form>
+            </li>
+
+
+
+
+
+          </ul>
+
+
+          <button class="modal-button-search" type="submit">
+            <span class="modal-button-text">Найти</span>
+          </button>
+
+
+
+          </button>
+        </section>
+      </div> -->
+    </div>
+
   </body>
 
 </html>
