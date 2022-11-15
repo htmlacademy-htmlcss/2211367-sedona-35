@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link href="styles/styles.css" rel="stylesheet">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -57,7 +58,7 @@
       <section class="block-info">
         <div class="block-section-wrapper">
           <h2 class="visually-hidden">Преимущества</h2>
-          <h3 class="main-title-h">Седона - небольшой городок в Аризоне, заслуживающего большего!</h3>
+          <h3 class="main-title-h">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p class="differences">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
       </section>
@@ -219,95 +220,114 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-close"> -->
+
+    <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
+
         <button class="model-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
 
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post"></form>
           <ul class="modal-list">
+
             <li class="modal-item">
+
               <span class="modal-item-header">Дата Заезда:</span>
-              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="field-group">
-                  <label class="visually-hidden" for="auth-date"></label>
-                  <input class="auth-form-field field" type="text" id="auth-date" name="auth-date"
-                    placeholder="27 апреля 2020">
-                </p>
-                <button class="foto-date">
-                </button>
-              </form>
+              <label class="visually-hidden" for="auth-date"></label>
+              <input value="27 апреля 2020" class="auth-form-field field" type="text" id="auth-date" name="auth-date"
+                placeholder="Укажите дату">
+
+              <button class="foto-date">
+              </button>
+
               <div class="error-wrapper">
                 <p class="error">Мы не можем отправить вас в прошлое.</p>
-                <div>
+              </div>
+
             </li>
+
             <li class="modal-item">
               <span class="modal-item-header">Дата Выезда:</span>
-              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="auth-date">Дата</label>
+              <input value="1 сентября 2023" class="auth-form-field field" type="text" id="auth-date" name="auth-date"
+                placeholder="Укажите дату">
 
-                <p class="field-group">
-                  <label class="visually-hidden" for="auth-date">Дата</label>
-                  <input class="auth-form-field field" type="text" id="auth-date" name="auth-date"
-                    placeholder="1 сентября 2023">
-                </p>
-                <button class="foto-date-too">
-                </button>
-              </form>
+              <button class="foto-date-too">
+              </button>
+
               <div class="date-actual-wrapper">
                 <p class="date-actual">На эти даты есть свободные номера. Пока есть.</p>
-                <div>
-            </li>
-          </ul>
-          <ul class="modal-list-people">
-
-            <li class="modal-item-people">
-              <span class="modal-item-header">Взрослые:</span>
-              <form class="auth-form-people" action="https://echo.htmlacademy.ru/" method="post">
-
-                <p class="field-group">
-                  <label class="visually-hidden" for="auth-people">Взрослые:</label>
-                  <input class="auth-form-field-people field-people" type="text" id="auth-people" name="auth-people"
-                    placeholder="2">
-                </p>
-              </form>
-            </li>
-
-            <li class="modal-item-people">
-              <span class="modal-item-header">Дети:</span>
-              <div class="icon-i">
-
               </div>
-              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
 
-                <p class="field-group">
-                  <label class="visually-hidden" for="auth-people">Дети:</label>
-                  <input class="auth-form-field-people field-people-2" type="text" id="auth-people" name="auth-people"
-                    placeholder="2">
-
-                </p>
-              </form>
             </li>
 
+            </form>
 
 
+            <li class="modal-item-people">
 
+              <span class="modal-item-human">Взрослые:</span>
+
+              <div class="auth-form-field-people field-people">
+                <span class="modal-minus"></span>
+                <span class="modal-figure">2</span>
+                <span class="modal-plus"></span>
+              </div>
+
+              <span class="modal-item-child">Дети:</span>
+
+
+              <div class="auth-form-field-people field-people-2">
+                <span class="modal-minus-2"></span>
+                <span class="modal-figure">2</span>
+                <span class="modal-plus-2"></span>
+              </div>
+
+              <div class="icon-i">
+              </div>
+
+              <div class="popover">
+
+                <p class="popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                  Дети до 6 лет размещаются бесплатно.</p>
+              </div>
+            </li>
+
+            <button class="modal-button-search" type="submit">
+              <span class="modal-button-text">Найти</span>
+            </button>
 
           </ul>
-
-
-          <button class="modal-button-search" type="submit">
-            <span class="modal-button-text">Найти</span>
-          </button>
-
-
-
-          </button>
         </section>
-      </div> -->
+
+      </div>
+
     </div>
 
+
+
+
+    <script>
+      const modal = document.querySelector(".modal-container")
+      const navigationLink = document.querySelector(".hotel-search")
+      const modelClose = document.querySelector(".model-close-button")
+
+      navigationLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modal.classList.add("modal-container-open");
+      })
+
+      modelClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modal.classList.remove("modal-container-open");
+      })
+
+    </script>
+
   </body>
+
 
 </html>
