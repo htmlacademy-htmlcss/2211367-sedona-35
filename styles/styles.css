@@ -105,11 +105,12 @@ body {
   padding: 0;
   margin: 0;
   height: 64px;
+  z-index: 1;
 }
 
 .main-header-logo {
   width: 140px;
-  height: 64px;
+  height: 70px;
   margin: 0;
   padding: 0;
 }
@@ -122,7 +123,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-left: 28px;
+  margin: 0;
+  margin-left: 30px;
 }
 
 .navigation-list {
@@ -207,14 +209,8 @@ body {
   min-height: 64px;
 }
 
-.botton {
-  background-color: #756157;
-  border-radius: 3px;
-  margin: 14px 0 0 20px;
-  padding: 8px 34px;
-}
-
 .navigation-link-button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -493,6 +489,21 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #82b3d3;
+  position: relative;
+  height: 485px;
+}
+
+.main-block::before {
+  content: "";
+  background-image: url(../images/Vectorwhite.svg);
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  /* top: 428px; */
+  bottom: 0;
+  left: 0;
 }
 
 .advantange-icon-home {
@@ -666,7 +677,8 @@ body {
 }
 
 .subscription-index {
-  background-image: url(../images/bgimage.jfif);
+  background-image: url(../images/subscription.jpg);
+  background-color: #82b3d3;
   background-size: cover;
   padding: 96px 258px 104px;
   margin-top: 5px;
@@ -709,6 +721,7 @@ body {
 
 .section-block {
   background-image: url(../images/mainbg.jpg);
+  background-color: #82b3d3;
   width: 1200px;
   height: 410px;
   margin: 0 auto;
@@ -1139,6 +1152,16 @@ body {
   border-radius: 3px;
   padding: 0;
   cursor: pointer;
+}
+
+.button-want {
+  width: 160px;
+  height: 36px;
+  background-color: #756157;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 14px 0 0 20px;
 }
 
 .button-reset {
